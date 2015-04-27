@@ -12,7 +12,7 @@ class TestACountConditionWithPercentageDiscount(TestCase):
     def setUp(self):
         range = models.Range(
             name="All products", includes_all_products=True)
-        condition = models.CountCondition(
+        condition = models.Condition(
             range=range,
             type=models.Condition.COUNT,
             value=3)
